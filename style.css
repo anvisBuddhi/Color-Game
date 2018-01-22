@@ -1,0 +1,114 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: 'Avenir';
+
+}
+
+h1 {
+	color: white;
+	/*background-color: #3d9ae7;*/
+	background-color: steelblue;
+	margin: 0;
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.1;
+	/*padding from top and bottom*/
+	padding: 20px 0;
+
+	
+}
+
+.square {
+	/*each square will be 30% of the container*/
+	width: 30%;
+	background-color: purple;
+	padding-bottom: 30%;
+
+	/*To be in the same line*/
+	float: left;
+
+	/*Space between each square (margin)*/
+	margin: 1.66%;
+
+	border-radius: 25px;
+	transition: background 0.6s;
+	/*Just for in case if browser doesnt support transition method*/
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+}
+
+#container {
+	/*Make container smaller*/
+	max-width: 400px;
+    /* 0 - for top and bottom; Auto - for left and right side, will fit
+     to the center from both sides equaly*/
+	margin: 20px auto;
+	
+
+}
+
+/*span {
+	color: white;
+}*/
+
+/*#message{
+	color: white;
+}*/
+
+#stripe {
+	text-align: center;
+	background-color: white;
+	height: 30px;
+	color: black;
+
+}
+
+/*New Color button*/
+button {
+	/*just plain text*/
+	background: none;
+	border: none;
+	color: steelblue;
+	text-transform: uppercase;
+	font-weight: 700;
+	/*It means to make full size in height of button, in container it is fitted*/
+	height: 100%;
+	letter-spacing: 1px;
+    font-size: inherit;
+    /*get rid of that irritating border over button(browser's fault)*/
+    outline: none;
+
+}
+
+button:hover {
+	background-color: steelblue;
+	color: white;
+	transition: all 0.3s;
+
+}
+
+
+/*When Easy or Hard mode selected, this class is used.*/
+.selected {
+	background-color: steelblue;
+	color: white;
+}
+
+#colorDisplay {
+	font-size: 150%;
+	
+	
+}
+
+#message {
+    /*make span be 20% of the screen,even if nothing inside it*/
+    display: inline-block;
+    width: 20%; 
+    font-style: inherit;
+    color: steelblue;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
